@@ -1,0 +1,167 @@
+@media screen and (min-width: 425px) {
+    .text-overlay h2 {
+        font-size: 30px;
+    }
+
+    .skills img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .text-overlay {
+        height: 180px;
+        bottom: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-overlay h2 {
+        font-size: 36px;
+    }
+
+    .lead-photo {
+        height: 858px;
+    }
+
+    .lead-photo .text-overlay {
+        height: 180px;
+        bottom: 30%;
+    }
+
+    .skills img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .cards-container:last-child {
+        margin-bottom: 0;
+    }
+
+    .contact-card::after {
+        content: "";
+        width: 36px;
+        height: 2px;
+        background-color: #10c9c3;
+        position: absolute;
+        top: 125px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    form .form-group {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    form .message {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav ul {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    header nav ul li a {
+        padding: 25px 20px;
+    }
+
+    .about-me-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        margin-top: 30px;
+    }
+
+    .about-me-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-me-text p {
+        padding: 0 20px 50px 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header nav {
+        width: 1024px;
+    }
+
+    #my-skills .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .skills img {
+        width: 80px;
+        height: 80px;
+    }
+
+    form .form-group {
+        flex-direction: row;
+    }
+
+    form .input-container {
+        margin-right: 30px;
+    }
+
+    form .message {
+        width: 400px;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav ul {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    header nav ul li a {
+        padding: 25px 20px;
+    }
+
+    .about-me-text p {
+        padding: 0 60px;
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
+
+    .about-me-photo img {
+        width: 200px;
+        height: 200px;
+        padding-bottom: 35px;
+    }
+}
