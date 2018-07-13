@@ -45,7 +45,7 @@ header nav ul li a {
     font-style: oblique;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ccffcc;
+    color: #0099ff;
     display: block;
     padding: 15px 10px;
     transition: 500ms ease;
@@ -78,25 +78,26 @@ header nav ul li a:active {
 #banner #name-position {
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 300px;
     margin: 50px auto;
 }
 
-#banner div h1 {
+body header div #banner div #name-position h1 {
     background-color: white;
-    text-align: center;
+    align-items: center;
     padding: 1px 5px;
     box-shadow: 1px 10px 10px 1px;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     color: #000;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 #banner div #position{
     display: flex;
     justify-content: center;
-    max-width: 400px;
+    max-width: 300px;
     color: #FFF;
     font-size: 20px;
 
@@ -200,6 +201,11 @@ div.hobby-link-item a {
     background-color: #FFF;
 }
 
+div.hobby-link-item a img {
+    background-color: #FFF;
+    width: 70px;
+}
+
 .list {
     margin: 0 5px;
     display: grid;
@@ -278,7 +284,7 @@ footer div.footer-links {
     max-width: 980px;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 30% 40%;
     flex-direction: row;
     justify-content: center;
     
