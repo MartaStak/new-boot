@@ -52,7 +52,7 @@
             <div id="banner">
                 <img src="images/avatar.jpg" alt="Marta Stakhiv" id="shadow">
                 <div id="name-position">
-                    <h1>Hi! I'm Marta Stakhiv</h1>
+                    <h2 id="marta-hello">Hi! I'm Marta Stakhiv</h2>
                     <p id="position"><b>Project Administrator</b></p>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <h2 class="nav-list">SKILLS</h2>
                 <div class="list-bg">
                     <div class="skills-education wew slideInDown" >
-                        <img id="sk-edu-img" src="images/languages.png" alt="languages">
+                        <img class="sk-edu-img" src="images/languages.png" alt="languages">
                         <article>
                             <h3>Languages</h3>
                             <div>
@@ -92,7 +92,7 @@
                         </article>
                     </div>
                     <div class="skills-education wew slideInDown">
-                        <img id="sk-edu-img" src="images/skills.png" alt="skills">
+                        <img class="sk-edu-img" src="images/skills.png" alt="skills">
                         <article>
                             <h3>Technologies</h3>
                             <div>
@@ -121,7 +121,7 @@
                 <h2 class="nav-list">EDUCATION & JOBS</h2>
                 <div>
                     <div class="skills-education wew slideInDown">
-                        <img id="sk-edu-img" src="images/learn.jpg" alt="education" width=200>
+                        <img class="sk-edu-img" src="images/learn.jpg" alt="education" width=200>
                         <article>
                             <h3>Education</h3>
                             <div class="timeline">
@@ -147,7 +147,7 @@
                         </article>
                     </div>
                     <div class="skills-education wew slideInDown">
-                        <img id="sk-edu-img" src="images/jobs.jpg" alt="jobs" width=150>
+                        <img class="sk-edu-img" src="images/jobs.jpg" alt="jobs" width=150>
                         <article>
                             <h3>Jobs</h3>
                             <div class="timeline">
@@ -218,14 +218,15 @@
                 <h2 class="nav-list">CONTACT ME</h2>
                 <p id="message">I'd love to hear from you</p>
                 <div  class="form-c">
-                    <form class="send-form"><!--method="POST" action="https://formspree.io/martast75@gmail.com"--> 
+                    <form class="send-form">
+                        <!--method="POST" action="https://formspree.io/martast75@gmail.com"--> 
                         <div class="ident">
                             <div id="name-email">
                                 <label for="name"><b>YOUR NAME:</b></label>
                                 <input type="text" name="name" id="name" placeholder="NAME" required>
                                 <br>
                                 <label for="email"> <b>YOUR EMAIL:</b></label>
-                                <input type="email" name="email" id="email" placeholder="EMAIL" required></label>
+                                <input type="email" name="email" id="email" placeholder="EMAIL" required>
                                 <br>
                             </div>
                             <div id="message-grid">
@@ -234,7 +235,7 @@
                             </div>
                         </div>
                         <div class="button">
-                            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#btn-submit">SEND MESSAGE</button>
+                            <input type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#btn-submit" value="SEND MESSAGE"><!--SEND MESSAGE</button>-->
                         </div>
                     </form>
                 </div>
@@ -245,16 +246,16 @@
                 <p id="marta"><b>Marta Stakhiv</b></p>
                 <div class="mob-mail-footer">
                     <div class="mob-mail wew shake">
-                        <a href="tel: +380661234567"><img src="images/Phone icon.png" target="_blank" alt="Mobile-phone"><p>Call me</p></a>
+                        <a href="tel:+380661234567"><img src="images/Phone-icon.png" alt="Mobile-phone"><p>Call me</p></a>
                     </div>
                     <div class="mob-mail wew shake">
-                        <a href="mailto: marta@gmail.com"><img src="images/mail-icon.png" target="_blank" alt="Email"><p>Email me</p></a>
+                        <a href="mailto:marta@gmail.com"><img src="images/mail-icon.png" alt="Email"><p>Email me</p></a>
                     </div>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/mstakhiv"><img src="images/facebook-footer-icon.png" target="_blank" alt="facebook"></a>
-                    <a href="https://www.linkedin.com/mstakhiv"><img src="images/linkedin-footer-icon.png" target="_blank" alt="linkedin"></a>
-                    <a href="skype: marta.stakhiv1"><img src="images/skype-footer-icon.png" target="_blank" alt="skype"></a>
+                    <a href="https://www.facebook.com/mstakhiv" target="_blank"><img src="images/facebook-footer-icon.png" alt="facebook"></a>
+                    <a href="https://www.linkedin.com/mstakhiv" target="_blank"><img src="images/linkedin-footer-icon.png" alt="linkedin"></a>
+                    <a href="skype:marta.stakhiv1" target="_blank"><img src="images/skype-footer-icon.png" alt="skype"></a>
                 </div>
             </div>
         </footer>
@@ -272,9 +273,8 @@
                 <h2>Thank you a lot for your message!!!<img src="images/like-icon.png" alt="Like"></h2>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#btn-submit">Save changes</button>
-              </div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Ok</button>
+               </div>
             </div>
           </div>
         </div>
@@ -282,8 +282,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script src="js/smooth-scroll.js"></script>
-        <script src="js/vendor/wew.min.js"></script>
         <script src="js/index-form.js"></script>
+        <script src="js/vendor/wew.min.js"></script>
         <script src="js/index.js"></script>
     </div>
 </body>

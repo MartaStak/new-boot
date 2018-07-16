@@ -78,26 +78,28 @@ header nav ul li a:active {
 #banner #name-position {
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    max-width: 600px;
     margin: 50px auto;
+    text-align: center;
 }
 
-body header div #banner div #name-position h1 {
+#banner div h2#marta-hello {
     background-color: white;
     align-items: center;
     padding: 1px 5px;
     box-shadow: 1px 10px 10px 1px;
     justify-content: center;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     color: #000;
-    max-width: 300px;
+    max-width: 400px;
+    
 }
 
 #banner div #position{
     display: flex;
     justify-content: center;
-    max-width: 300px;
+    max-width: 450px;
     color: #FFF;
     font-size: 20px;
 
@@ -159,19 +161,25 @@ body header div #banner div #name-position h1 {
     margin-left: 5%;
 }
 
+.skills-education .sk-edu-img {
+    align-self:center;
+    justify-self: center;
+}
+
 .progress{
     margin-right: 30px;
 
-}
-.skills-education #sk-edu-img {
-    align-self:center;
-    justify-self: center;
 }
 
 @media screen and (max-width: 550px) {
     .skills-education {
         display: flex;
         flex-direction: column;
+    }
+    .sk-edu-img {
+        display: block;
+        align-self:center;
+        justify-self: center;
     }
 }
 
