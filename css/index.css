@@ -51,13 +51,16 @@ header nav ul li a {
     transition: 500ms ease;
 }
 
-header nav ul li a:hover {
-    background-color: #ffffcc;
+.navbar-light .navbar-nav .nav-link{
+    color: #0099ff;
 }
 
-
-header nav ul li a:active {
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #0099ff;;
+}
+header nav ul li a:hover {
     background-color: #ffffcc;
+    color: #0099ff;;
 }
 
 #banner {
@@ -110,9 +113,6 @@ header nav ul li a:active {
 }
 
 .about p {
-    display: flex;
-    justify-content: center;
-    float: left;
     margin-left: 10%;
     margin-right: 20px;
 }
@@ -123,20 +123,13 @@ header nav ul li a:active {
     padding-top: 20px;
     color: #66ffd6;
 }
-.nav-list {
+
+h2.nav-list {
     margin-top: 20px;
     margin-left: 20px;
     padding-top: 20px;
     color: #66ffd6;
     top: 0;
-}
-
-.list-bg{
-    background-image: url(../images/pattern.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-
 }
 
 
@@ -164,6 +157,7 @@ header nav ul li a:active {
 .skills-education .sk-edu-img {
     align-self:center;
     justify-self: center;
+    max-width: 200px;
 }
 
 .progress{
@@ -226,8 +220,8 @@ div.hobby-link-item a img {
     max-width: 400px;
     width: 100%;
 }
-    
-    
+
+   
 @media screen and (max-width: 820px) {
     .list {
         grid-template-columns: repeat(2, 1fr);
@@ -274,7 +268,9 @@ div.hobby-link-item a img {
     flex-direction: column;
     justify-content: left;
 }
-
+.modal-body{
+    text-align: center;
+}
 @media screen and (max-width: 660px) {
     #contacts .form-c form .ident {
         display: flex;
@@ -325,11 +321,17 @@ footer .footer-links .mob-mail{
 }
 
 footer .footer-links .footer-social{
-    display: inline-block;
     width: 100%;
     text-align: center;
     align-self: center;
 }
+
+img.footer-img{
+    width: 50px;
+    text-align: center;
+    align-self: center;
+}
+
 
 @media screen and (max-width: 440px) {
     .list {
